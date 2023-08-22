@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Todolist</title>
+        <link rel="stylesheet" href="./src/css/main.css">
+    </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <body>
+
+        <main>
+            <div class="w-full md:w-[80%] lg:w-[50%] bg-sky-600 h-screen mx-auto px-3 md:px-6 py-8">
+                <div>
+                    <h2 class="text-[48px] text-sky-100">To Do List</h2>
+                </div>
+                <form id="frm-task">
+                    <div class="w-full flex items-center gap-2 md:gap-5 mt-5">
+                        <input type="text" name="task" id="task" class="w-[85%] md:w-[90%] outline-none p-3">
+                        <button class="w-[15%] md:w-[10%] bg-sky-500 text-center py-3">
+                            <i class="fa-solid fa-plus text-sky-200"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <ul id="task-list" class="mt-6 flex justify-between gap-y-3 flex-col overflow-y-auto h-[65vh]"></ul>
+            </div>
+        </main>
+    </body>
+    <script type="module" src="./src/js/main.js"></script>
+</html>
